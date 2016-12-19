@@ -1,4 +1,6 @@
 ﻿using Abp.EntityFramework;
+using Blog_Solution.Domain.Customers;
+using System.Data.Entity;
 
 namespace Blog_Solution.EntityFramework
 {
@@ -8,6 +10,10 @@ namespace Blog_Solution.EntityFramework
 
         //Example:
         //public virtual IDbSet<User> Users { get; set; }
+
+
+        //Customers
+        public virtual IDbSet<CustomerRole> CustomerRole { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
