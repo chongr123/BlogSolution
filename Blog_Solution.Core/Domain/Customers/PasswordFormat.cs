@@ -5,8 +5,17 @@
     /// </summary>
     public enum PasswordFormat:int
     {
+        /// <summary>
+        /// 不加密
+        /// </summary>
         Clear = 0,
+        /// <summary>
+        /// Hashed加密法
+        /// </summary>
         Hashed = 1,
-        Encrypted = 2
+        /// <summary>
+        /// Encrypted加密法
+        /// </summary>
+        Encrypted = 2,
     }
 }

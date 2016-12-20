@@ -26,6 +26,7 @@
     <script type="text/javascript">
         //This is used to get the application's root path from javascript. It's useful if you're running application in a virtual directory under IIS.
         var abp = abp || {}; abp.appPath = '@ApplicationPath';
+
     </script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -58,5 +59,8 @@
 
     <!-- View specific scripts -->
     @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        kendo.culture("zh-CN");
+    </script>
 </body>
 </html>

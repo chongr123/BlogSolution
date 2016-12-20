@@ -8,6 +8,7 @@ using Abp.Localization.Dictionaries;
 using Abp.Localization.Dictionaries.Xml;
 using Abp.Modules;
 using Abp.Web.Mvc;
+using Abp.AutoMapper;
 
 namespace Blog_Solution.Web
 {
@@ -15,13 +16,20 @@ namespace Blog_Solution.Web
         typeof(AbpWebMvcModule),
         typeof(Blog_SolutionDataModule), 
         typeof(Blog_SolutionApplicationModule), 
-        typeof(Blog_SolutionWebApiModule))]
+        typeof(Blog_SolutionWebApiModule),
+        //新增实体映射
+        typeof(AbpAutoMapperModule))]
     public class Blog_SolutionWebModule : AbpModule
     {
         public override void PreInitialize()
         {
-            //Add/remove languages for your application
-            Configuration.Localization.Languages.Add(new LanguageInfo("en", "English", "famfamfam-flag-england"));
+            //这里是自动映射
+            Configuration.Modules.AbpAutoMapper().Configurators.Add(mapper =>
+            {
+            });
+
+                //Add/remove languages for your application
+                Configuration.Localization.Languages.Add(new LanguageInfo("en", "English", "famfamfam-flag-england"));
             Configuration.Localization.Languages.Add(new LanguageInfo("zh-CN", "简体中文", "famfamfam-flag-cn",true));
 
             //Add/remove localization sources here

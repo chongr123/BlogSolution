@@ -1,0 +1,69 @@
+﻿@model CustomerRoleModel
+
+@Html.ValidationSummary(true)
+@Html.HiddenFor(model => model.Id)
+
+<div class="content">
+    <div class="form-horizontal">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.RoleName)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.RoleName)
+                            @Html.ValidationMessageFor(model => model.RoleName)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Enabled)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.Enabled)
+                            @Html.ValidationMessageFor(model => model.Enabled)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.DisplayOrder)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.DisplayOrder)
+                            @Html.ValidationMessageFor(model => model.DisplayOrder)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.IsAdmin)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.IsAdmin)
+                            @Html.ValidationMessageFor(model => model.IsAdmin)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.ParentId)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.DropDownListFor(model => model.ParentId,Model.AvailableParentRole)
+                            @Html.ValidationMessageFor(model => model.ParentId)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.IsDefault)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.IsDefault)
+                            @Html.ValidationMessageFor(model => model.IsDefault)
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

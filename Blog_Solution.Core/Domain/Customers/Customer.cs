@@ -76,7 +76,7 @@ namespace Blog_Solution.Domain.Customers
 
 
         /// <summary>
-        /// Gets or sets the password format
+        /// 加密方式(不映射)
         /// </summary>
         [NotMapped]
         public virtual PasswordFormat PasswordFormat
