@@ -88,7 +88,9 @@
   <ItemGroup>
     <Compile Include="Blog_SolutionConsts.cs" />
     <Compile Include="Blog_SolutionCoreModule.cs" />
+    <Compile Include="Domain\Customers\Customer.cs" />
     <Compile Include="Domain\Customers\CustomerRole.cs" />
+    <Compile Include="Domain\Customers\PasswordFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
