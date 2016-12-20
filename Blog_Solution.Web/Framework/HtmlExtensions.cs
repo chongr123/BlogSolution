@@ -260,7 +260,7 @@ namespace Blog_Solution.Web.Framework
             //keep this method synchornized with
             //"SaveSelectedTab" method of \Administration\Controllers\BaseAdminController.cs
             var tabName = string.Empty;
-            const string dataKey = "nop.selected-tab-name";
+            const string dataKey = "blog.selected-tab-name";
 
             if (helper.ViewData.ContainsKey(dataKey))
                 tabName = helper.ViewData[dataKey].ToString();
@@ -286,7 +286,7 @@ namespace Blog_Solution.Web.Framework
             return MvcHtmlString.Create(builder.ToString());
         }
 
-        public static MvcHtmlString NopLabelFor<TModel, TValue>(this HtmlHelper<TModel> helper,
+        public static MvcHtmlString LabelForModel<TModel, TValue>(this HtmlHelper<TModel> helper,
                 Expression<Func<TModel, TValue>> expression, bool displayHint = true)
         {
             var result = new StringBuilder();
@@ -296,13 +296,15 @@ namespace Blog_Solution.Web.Framework
 
             result.Append(helper.LabelFor(expression, new { title = hintResource, @class = "control-label" }));
 
-            if (metadata.AdditionalValues.TryGetValue("NopResourceDisplayName", out value))
+            if (metadata.AdditionalValues.TryGetValue("ResourceDisplayName", out value))
             {
                 var resourceDisplayName = value as ResourceDisplayName;
                 if (resourceDisplayName != null && displayHint)
                 {
-                    hintResource = Abp.Dependency.IocManager.Instance.Resolve<ILocalizationSource>()
-                        .GetString(resourceDisplayName.ResourceKey + ".Hint");
+
+                    var localizationManager = Abp.Dependency.IocManager.Instance.Resolve<ILocalizationManager>();
+                    var localzableString = new LocalizableString(resourceDisplayName.ResourceKey + ".Hint", Blog_SolutionConsts.LocalizationSourceName);
+                    hintResource = localizationManager.GetString(localzableString);
                     if (!String.IsNullOrEmpty(hintResource))
                     {
                         result.Append(helper.Hint(hintResource).ToHtmlString());
@@ -317,7 +319,7 @@ namespace Blog_Solution.Web.Framework
             return MvcHtmlString.Create(laberWrapper.ToString());
         }
 
-        public static MvcHtmlString EditorFor<TModel, TValue>(this HtmlHelper<TModel> helper,
+        public static MvcHtmlString EditorForModel<TModel, TValue>(this HtmlHelper<TModel> helper,
             Expression<Func<TModel, TValue>> expression, bool? renderFormControlClass = null)
         {
             var result = new StringBuilder();
@@ -333,7 +335,7 @@ namespace Blog_Solution.Web.Framework
             return MvcHtmlString.Create(result.ToString());
         }
 
-        public static MvcHtmlString DropDownList<TModel>(this HtmlHelper<TModel> helper, string name,
+        public static MvcHtmlString DropDownListModel<TModel>(this HtmlHelper<TModel> helper, string name,
             IEnumerable<SelectListItem> itemList, object htmlAttributes = null, bool renderFormControlClass = true)
         {
             var result = new StringBuilder();
@@ -347,7 +349,7 @@ namespace Blog_Solution.Web.Framework
             return MvcHtmlString.Create(result.ToString());
         }
 
-        public static MvcHtmlString DropDownListFor<TModel, TValue>(this HtmlHelper<TModel> helper,
+        public static MvcHtmlString DropDownListForModel<TModel, TValue>(this HtmlHelper<TModel> helper,
             Expression<Func<TModel, TValue>> expression, IEnumerable<SelectListItem> itemList,
             object htmlAttributes = null, bool renderFormControlClass = true)
         {
@@ -362,7 +364,7 @@ namespace Blog_Solution.Web.Framework
             return MvcHtmlString.Create(result.ToString());
         }
 
-        public static MvcHtmlString TextAreaFor<TModel, TValue>(this HtmlHelper<TModel> helper,
+        public static MvcHtmlString TextAreaForModel<TModel, TValue>(this HtmlHelper<TModel> helper,
             Expression<Func<TModel, TValue>> expression, object htmlAttributes = null,
             bool renderFormControlClass = true, int rows = 4, int columns = 20)
         {
@@ -378,11 +380,11 @@ namespace Blog_Solution.Web.Framework
         }
 
 
-        public static MvcHtmlString DisplayFor<TModel, TValue>(this HtmlHelper<TModel> helper, Expression<Func<TModel, TValue>> expression)
+        public static MvcHtmlString DisplayForModel<TModel, TValue>(this HtmlHelper<TModel> helper, Expression<Func<TModel, TValue>> expression)
         {
             var result = new TagBuilder("div");
             result.Attributes.Add("class", "form-text-row");
-            result.InnerHtml = helper.DisplayFor(expression).ToString();
+            result.InnerHtml = helper.DisplayForModel(expression).ToString();
 
             return MvcHtmlString.Create(result.ToString());
         }
@@ -465,10 +467,11 @@ namespace Blog_Solution.Web.Framework
             string dayLocale, monthLocale, yearLocale;
             if (localizeLabels)
             {
-                var locService = Abp.Dependency.IocManager.Instance.Resolve<ILocalizationSource>();
-                dayLocale = locService.GetString("Common.Day");
-                monthLocale = locService.GetString("Common.Month");
-                yearLocale = locService.GetString("Common.Year");
+                var localizationManager = Abp.Dependency.IocManager.Instance.Resolve<ILocalizationManager>();                
+                dayLocale = localizationManager.GetString(new LocalizableString("Common.Day", Blog_SolutionConsts.LocalizationSourceName));
+                monthLocale = localizationManager.GetString(new LocalizableString("Common.Month", Blog_SolutionConsts.LocalizationSourceName));
+                yearLocale = localizationManager.GetString(new LocalizableString("Common.Year", Blog_SolutionConsts.LocalizationSourceName));
+                
             }
             else
             {

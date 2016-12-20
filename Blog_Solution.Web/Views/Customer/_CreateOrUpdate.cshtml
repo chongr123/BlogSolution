@@ -1,0 +1,82 @@
+﻿@model CustomerModel
+
+@Html.ValidationSummary(true)
+@Html.HiddenFor(model => model.Id)
+
+<div class="content">
+    <div class="form-horizontal">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelForModel(model => model.LoginName)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorForModel(model => model.LoginName)
+                            @Html.ValidationMessageFor(model => model.LoginName)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelForModel(model => model.Password)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorForModel(model => model.Password)
+                            @Html.ValidationMessageFor(model => model.Password)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelForModel(model => model.CustomerRoleId)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.DropDownListForModel(model => model.CustomerRoleId,Model.AvailableCustomerRoles)
+                            @Html.ValidationMessageFor(model => model.CustomerRoleId)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelForModel(model => model.Mobile)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorForModel(model => model.Mobile)
+                            @Html.ValidationMessageFor(model => model.Mobile)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelForModel(model => model.Email)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorForModel(model => model.Email)
+                            @Html.ValidationMessageFor(model => model.Email)
+                        </div>
+                    </div>
+                    @if (Model.Id == 0)
+                    {
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelForModel(model => model.PasswordFormatId)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.DropDownListForModel(model => model.PasswordFormatId, Model.AvailablePasswordFormats)
+                            @Html.ValidationMessageFor(model => model.PasswordFormatId)
+                        </div>
+                    </div>
+                    }
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelForModel(model => model.Deleted)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorForModel(model => model.Deleted)
+                            @Html.ValidationMessageFor(model => model.Deleted)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

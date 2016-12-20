@@ -118,6 +118,18 @@ namespace Blog_Solution.Web.Controllers
             PrepareCustomerRoleModel(model);
             return View(model);
         }
+
+        public ActionResult Edit(int id)
+        {
+            var role =  _roleService.GetCustomerRoleById(id);
+            if (role == null)
+                return RedirectToAction("List");
+
+            var model = role.MapTo<CustomerRoleModel>();
+            PrepareCustomerRoleModel(model);
+            return View(model);
+
+        }
         #endregion
 
     }

@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "List";
+}
+
+
+@Html.AntiForgeryToken()
+<div class="content-header clearfix">
+    <h1 class="pull-left">
+        @L("Customer.List")
+    </h1>
+    <div class="pull-right">
+        <a href="@Url.Action("Create")" class="btn bg-blue">
+            <i class="fa fa-plus-square"></i>
+            @L("Common.AddNew")
+        </a>
+    </div>
+</div>
+
+<div class="content">
+    <div class="form-horizontal">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="customers-grid"></div>
+
+                    <script>
+                        $(document).ready(function() {
+                            $("#customers-grid").kendoGrid({
+                                dataSource: {
+                                    type: "json",
+                                    transport: {
+                                        read: {
+                                            url: "@Html.Raw(Url.Action("List", "Customer"))",
+                                            type: "POST",
+                                            dataType: "json",
+                                            data: addAntiForgeryToken
+                                        }
+                                    },
+                                    schema: {
+                                        data: "Data",
+                                        total: "Total",
+                                        errors: "Errors"
+                                    },
+                                    error: function(e) {
+                                        display_kendoui_grid_error(e);
+                                        this.cancelChanges();
+                                    },
+                                    pageSize: @(defaultGridPageSize),
+                                    serverPaging: true,
+                                    serverFiltering: true,
+                                    serverSorting: true
+                                },
+                                pageable: {
+                                    refresh: true,
+                                    pageSizes: [@(gridPageSizes)],
+                                    refresh: true,
+                                    pageSizes: true,
+                                    buttonCount: 5
+                                },
+                                scrollable: false,
+                                columns: [{
+                                    field: "Id",
+                                    title: "@L("Id")"
+                                },{
+                                    field: "LoginName",
+                                    title: "@L("Customer.LoginName")"
+                                }, {
+                                    field: "Id",
+                                    title: "@L("Common.Edit")",
+                                    width: 100,
+                                    template: '<a href="Edit/#=Id#">@L("Common.Edit")</a>'
+                                }]
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,7 +7,7 @@
 @Html.AntiForgeryToken()
 <div class="content-header clearfix">
     <h1 class="pull-left">
-        @L("Catalog.List")
+        @L("CustomerRole.List")
     </h1>
     <div class="pull-right">
         <a href="@Url.Action("Create")" class="btn bg-blue">
@@ -65,7 +65,12 @@
                                 },{
                                     field: "RoleName",
                                     title: "@L("CustomerRole.Name")"
-                                }]
+                                }, {
+                                    field: "Id",
+                                    title: "@L("Common.Edit")",
+                                    width: 100,
+                            template: '<a href="Edit/#=Id#">@L("Common.Edit")</a>'
+                        }]
                             });
                         });
                     </script>

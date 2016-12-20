@@ -1,3 +1,30 @@
 body {
   padding-top: 80px;
 }
+
+/*MODAL WINDOWS*/
+.modal-content {
+    text-align: left;
+}
+.form-horizontal .label-wrapper {
+    display: table;
+    float: right;
+    min-height: 28px;
+}
+
+@media (max-width: 767px) {
+    /* COMMON */
+    .modal-dialog {
+        margin-top: 30px;
+    }
+
+    /* HEADER */
+    .main-header {
+        max-height: 200px;
+    }
+
+    /* FORM ELEMENTS */
+    .form-horizontal .panel-popup .label-wrapper {
+        float: left;
+    }
+}

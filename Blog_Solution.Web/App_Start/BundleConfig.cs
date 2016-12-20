@@ -24,7 +24,8 @@ namespace Blog_Solution.Web
                     .Include("~/Content/font-awesome.min.css", new CssRewriteUrlTransform())
                     .Include(string.Format("~/Content/kendo/{0}/kendo.common.min.css",kendoVersion) , new CssRewriteUrlTransform())
                     .Include(string.Format("~/Content/kendo/{0}/kendo.default.min.css", kendoVersion), new CssRewriteUrlTransform())
-                    .Include(string.Format("~/Content/kendo/{0}/kendo.bootstrap.min", kendoVersion), new CssRewriteUrlTransform())
+                    .Include(string.Format("~/Content/kendo/{0}/kendo.bootstrap.min.css", kendoVersion), new CssRewriteUrlTransform())
+                    .Include(string.Format("~/Content/adminLTE/AdminLTE-2.3.0.min.css", kendoVersion), new CssRewriteUrlTransform())
                 );
 
             //~/Bundles/vendor/js/top (These scripts should be included in the head of the page)

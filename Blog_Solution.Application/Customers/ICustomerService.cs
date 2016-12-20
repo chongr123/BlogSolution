@@ -1,6 +1,6 @@
 ﻿using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Blog_Solution.Customers.Dto;
+using Blog_Solution.Domain.Customers;
 using System;
 
 namespace Blog_Solution.Customers
@@ -17,7 +17,7 @@ namespace Blog_Solution.Customers
         /// 更新用户
         /// </summary>
         /// <param name="input"></param>
-        void UpdateCustomer(Customer input);
+        void UpdateCustomer(Customer customer);
 
         /// <summary>
         /// 根据主键获取用户

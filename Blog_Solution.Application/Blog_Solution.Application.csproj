@@ -126,6 +126,7 @@
     <Compile Include="Blog_SolutionAppServiceBase.cs" />
     <Compile Include="Customers\CustomerManager.cs" />
     <Compile Include="Customers\CustomerRoleService.cs" />
+    <Compile Include="Customers\CustomerService.cs" />
     <Compile Include="Customers\CustomerStore.cs" />
     <Compile Include="Customers\Dto\Customer.cs" />
     <Compile Include="Customers\ICustomerRoleService.cs" />

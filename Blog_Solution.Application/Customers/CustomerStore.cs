@@ -57,14 +57,30 @@ namespace Blog_Solution.Customers
                 PasswordSalt = customer.PasswordSalt,
                 PasswordFormat = customer.PasswordFormat,
                 PasswordFormatId = customer.PasswordFormatId,
-                UserName = customer.LoginName,
+                UserName =customer.LoginName
             };
         }
 
         public async Task<Customer> FindByNameAsync(string userName)
         {
             var customer = _customerService.GetCustomerByLoginName(userName);
-            return customer;
+            return new Customer
+            {
+                Id = customer.Id,
+                CreationTime = customer.CreationTime,
+                CustomerRoleId = customer.CustomerRoleId,
+                Deleted = customer.Deleted,
+                Email = customer.Email,
+                LastIpAddress = customer.LastIpAddress,
+                LastModificationTime = customer.LastModificationTime,
+                LoginName = customer.LoginName,
+                Mobile = customer.Mobile,
+                Password = customer.Password,
+                PasswordSalt = customer.PasswordSalt,
+                PasswordFormat = customer.PasswordFormat,
+                PasswordFormatId = customer.PasswordFormatId,
+                UserName = customer.LoginName
+            };
         }
 
         public Task UpdateAsync(Customer user)

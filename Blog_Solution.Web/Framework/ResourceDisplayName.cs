@@ -1,4 +1,5 @@
-﻿using Abp.Localization.Sources;
+﻿using Abp.Localization;
+using Abp.Localization.Sources;
 
 namespace Blog_Solution.Web.Framework
 {
@@ -19,8 +20,9 @@ namespace Blog_Solution.Web.Framework
         {
             get
             {
-                var localizationSource = Abp.Dependency.IocManager.Instance.Resolve<ILocalizationSource>();
-                _resourceValue = localizationSource.GetString(ResourceKey);
+                var localizationManager = Abp.Dependency.IocManager.Instance.Resolve<ILocalizationManager>();
+                var localzableString = new LocalizableString(ResourceKey, Blog_SolutionConsts.LocalizationSourceName);
+                _resourceValue = localizationManager.GetString(localzableString);
                 return _resourceValue;
             }
         }

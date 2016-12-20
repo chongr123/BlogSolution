@@ -10,55 +10,55 @@
                 <div class="panel-body">
                     <div class="form-group">
                         <div class="col-md-3">
-                            @Html.LabelFor(model => model.RoleName)
+                            @Html.LabelForModel(model => model.RoleName)
                         </div>
                         <div class="col-md-9">
-                            @Html.EditorFor(model => model.RoleName)
+                            @Html.EditorForModel(model => model.RoleName)
                             @Html.ValidationMessageFor(model => model.RoleName)
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-3">
-                            @Html.LabelFor(model => model.Enabled)
+                            @Html.LabelForModel(model => model.Enabled)
                         </div>
                         <div class="col-md-9">
-                            @Html.EditorFor(model => model.Enabled)
+                            @Html.EditorForModel(model => model.Enabled)
                             @Html.ValidationMessageFor(model => model.Enabled)
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-3">
-                            @Html.LabelFor(model => model.DisplayOrder)
+                            @Html.LabelForModel(model => model.DisplayOrder)
                         </div>
                         <div class="col-md-9">
-                            @Html.EditorFor(model => model.DisplayOrder)
+                            @Html.EditorForModel(model => model.DisplayOrder)
                             @Html.ValidationMessageFor(model => model.DisplayOrder)
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-3">
-                            @Html.LabelFor(model => model.IsAdmin)
+                            @Html.LabelForModel(model => model.IsAdmin)
                         </div>
                         <div class="col-md-9">
-                            @Html.EditorFor(model => model.IsAdmin)
+                            @Html.EditorForModel(model => model.IsAdmin)
                             @Html.ValidationMessageFor(model => model.IsAdmin)
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-3">
-                            @Html.LabelFor(model => model.ParentId)
+                            @Html.LabelForModel(model => model.ParentId)
                         </div>
                         <div class="col-md-9">
-                            @Html.DropDownListFor(model => model.ParentId,Model.AvailableParentRole)
+                            @Html.DropDownListForModel(model => model.ParentId,Model.AvailableParentRole)
                             @Html.ValidationMessageFor(model => model.ParentId)
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-3">
-                            @Html.LabelFor(model => model.IsDefault)
+                            @Html.LabelForModel(model => model.IsDefault)
                         </div>
                         <div class="col-md-9">
-                            @Html.EditorFor(model => model.IsDefault)
+                            @Html.EditorForModel(model => model.IsDefault)
                             @Html.ValidationMessageFor(model => model.IsDefault)
                         </div>
                     </div>                    
