@@ -96,6 +96,9 @@
   <ItemGroup>
     <Compile Include="Blog_SolutionApplicationModule.cs" />
     <Compile Include="Blog_SolutionAppServiceBase.cs" />
+    <Compile Include="Customers\CustomerRoleService.cs" />
+    <Compile Include="Customers\ICustomerRoleService.cs" />
+    <Compile Include="PagedResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
