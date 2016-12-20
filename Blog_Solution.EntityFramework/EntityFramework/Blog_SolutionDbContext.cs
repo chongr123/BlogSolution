@@ -14,6 +14,7 @@ namespace Blog_Solution.EntityFramework
 
         //Customers
         public virtual IDbSet<CustomerRole> CustomerRole { get; set; }
+        public virtual IDbSet<Customer> Customer { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
