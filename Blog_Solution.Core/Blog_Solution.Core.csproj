@@ -79,6 +79,7 @@
     </Reference>
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -88,6 +89,9 @@
   <ItemGroup>
     <Compile Include="Blog_SolutionConsts.cs" />
     <Compile Include="Blog_SolutionCoreModule.cs" />
+    <Compile Include="Common\CommonHelper.cs" />
+    <Compile Include="Common\ComponentModel\GenericDictionaryTypeConverter.cs" />
+    <Compile Include="Common\ComponentModel\GenericListTypeConverter.cs" />
     <Compile Include="Domain\Customers\Customer.cs" />
     <Compile Include="Domain\Customers\CustomerRole.cs" />
     <Compile Include="Domain\Customers\PasswordFormat.cs" />

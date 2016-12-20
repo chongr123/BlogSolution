@@ -1,4 +1,5 @@
-﻿using Abp.Domain.Entities.Auditing;
+﻿using Abp.Domain.Entities;
+using Abp.Domain.Entities.Auditing;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,7 +9,7 @@ namespace Blog_Solution.Domain.Customers
     /// <summary>
     /// 用户实体
     /// </summary>
-    public class Customer: IHasCreationTime,IHasModificationTime
+    public class Customer:Entity ,IHasCreationTime,IHasModificationTime
     {
         /// <summary>
         /// 登录名

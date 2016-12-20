@@ -30,6 +30,9 @@ namespace Blog_Solution.Web
                     )
                 );
 
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/bootstrap.js"));
+
             //~/Bundles/vendor/bottom (Included in the bottom for fast page load)
             bundles.Add(
                 new ScriptBundle("~/Bundles/vendor/js/bottom")
@@ -38,9 +41,7 @@ namespace Blog_Solution.Web
 
                         "~/Scripts/jquery-2.1.4.min.js",
                         "~/Scripts/jquery-ui-1.11.4.min.js",
-
-                        "~/Scripts/bootstrap.min.js",
-
+                        
                         "~/Scripts/moment-with-locales.min.js",
                         "~/Scripts/jquery.validate.min.js",
                         "~/Scripts/jquery.blockUI.js",
