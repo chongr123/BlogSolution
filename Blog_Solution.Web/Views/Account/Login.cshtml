@@ -1,6 +1,6 @@
 ﻿@using Abp.Web.Mvc.Extensions
 @{
-
+    Layout = "~/Views/Shared/_SimpleLayout.cshtml";
 }
 <div id="LoginArea" class="row">
     <div class="col-lg-12">
@@ -9,7 +9,6 @@
                 @Html.AntiForgeryToken()
                 <fieldset>
                     <legend>@L("LogIn")</legend>
-
                     <div class="form-group">
                         <div class="col-lg-12">
                             <input type="text" class="form-control" name="LoginName" placeholder="@L("LoginName")" required maxlength="50">
@@ -41,3 +40,7 @@
     </div>
 </div>
 
+<style>
+    body{background:#6aa9e5}
+    .wrapper{width:600px;margin:160px auto;background:#6aa9e5}
+</style>
