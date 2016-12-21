@@ -1,29 +1,18 @@
 ﻿@{
-    ViewBag.ActiveMenu = "Home"; //The menu item will be active for this page.
+    //page title
+    ViewBag.Title = L("Admin.Dashboard");    
 }
-<div>
-    <h1>@L("WellcomeMessage")!</h1>
-    <p class="lead">@L("Home_ThisIsATemplate")</p>
+
+@Html.AntiForgeryToken()
+<div class="content-header">
+    <h1>
+        @L("Admin.Dashboard")
+    </h1>
+</div>
+
+<div class="content">
     <div class="row">
-        <div class="col-md-4">
-            <h3>ASP.NET MVC</h3>
-            <p>
-                @L("Home_AspNetDescription")
-            </p>
-            <a class="btn btn-primary btn-sm" href="http://asp.net/mvc">@L("LearnMore")..</a>
-        </div>
-        <div class="col-md-4">
-            <h3>ASP.NET Boilerplate</h3>
-            <p>
-                @L("Home_AspNetBoilerplateDescription")
-            </p>
-            <a class="btn btn-primary btn-sm" href="http://aspnetboilerplate.com">@L("LearnMore")..</a>
-        </div>
-        <div class="col-md-4">
-            <h3>@L("Others")</h3>
-            <p>
-                @L("Home_OtherTools")
-            </p>
+        <div class="col-md-12">
         </div>
     </div>
 </div>

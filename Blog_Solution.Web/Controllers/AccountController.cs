@@ -15,7 +15,6 @@ namespace Blog_Solution.Web.Controllers
     public class AccountController : Blog_SolutionControllerBase
     {
         #region Fields && Ctor
-
         
         private readonly LoginManager _loginManage;
         private readonly CustomerManager _customerManager;
@@ -51,7 +50,8 @@ namespace Blog_Solution.Web.Controllers
             }
 
             ViewBag.returnUrl = returnUrl;
-            return View();
+            var model = new LoginModel();
+            return View(model);
         }
 
         [HttpPost]

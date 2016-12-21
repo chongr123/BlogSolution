@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Blog_Solution.Customers.Dto;
+﻿using Blog_Solution.Customers.Dto;
 using Blog_Solution.Security;
 
 namespace Blog_Solution.Customers
@@ -58,7 +53,6 @@ namespace Blog_Solution.Customers
                 PasswordSalt = customer.PasswordSalt,
                 PasswordFormat = customer.PasswordFormat,
                 PasswordFormatId = customer.PasswordFormatId,
-                UserName = customer.LoginName
             };
             return result;
         }

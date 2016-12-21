@@ -1023,6 +1023,7 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\CustomerRoleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -1041,7 +1042,10 @@
     <Compile Include="Framework\Mvc\ActionConfirmationModel.cs" />
     <Compile Include="Framework\Mvc\NullJsonResult.cs" />
     <Compile Include="Framework\ResourceDisplayName.cs" />
+    <Compile Include="Helper\SelectListHelper.cs" />
     <Compile Include="Models\Account\LoginModel.cs" />
+    <Compile Include="Models\Catalogs\CategoryListModel.cs" />
+    <Compile Include="Models\Catalogs\CategoryModel.cs" />
     <Compile Include="Models\Customers\CustomerListModel.cs" />
     <Compile Include="Models\Customers\CustomerModel.cs" />
     <Compile Include="Models\Customers\CustomerRoleListModel.cs" />
@@ -1154,6 +1158,10 @@
     <Content Include="Views\Customer\_CreateOrUpdate.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Shared\_SimpleLayout.cshtml" />
+    <Content Include="Views\Category\List.cshtml" />
+    <Content Include="Views\Category\Create.cshtml" />
+    <Content Include="Views\Category\Edit.cshtml" />
+    <Content Include="Views\Category\_CreateOrUpdate.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -112,8 +112,15 @@
     <Compile Include="Migrations\201612200441418_Create_Customers.Designer.cs">
       <DependentUpon>201612200441418_Create_Customers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612210612346_Create_Blogs.cs" />
+    <Compile Include="Migrations\201612210612346_Create_Blogs.Designer.cs">
+      <DependentUpon>201612210612346_Create_Blogs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Blog_SolutionDataModule.cs" />
+    <Compile Include="Migrations\SeedData\DefaultCategoryData.cs" />
+    <Compile Include="Migrations\SeedData\DefaultCustomerData.cs" />
+    <Compile Include="Migrations\SeedData\InitialHostDbBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +136,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201612200441418_Create_Customers.resx">
       <DependentUpon>201612200441418_Create_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612210612346_Create_Blogs.resx">
+      <DependentUpon>201612210612346_Create_Blogs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using System;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -22,6 +23,11 @@ namespace Blog_Solution.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+               name: "login",
+               url: "login",
+               defaults: new { controller = "Account", action = "Login"}
+           );
         }
     }
 }

@@ -93,6 +93,9 @@
     <Compile Include="Common\ComponentModel\GenericDictionaryTypeConverter.cs" />
     <Compile Include="Common\ComponentModel\GenericListTypeConverter.cs" />
     <Compile Include="Common\MimeTypes.cs" />
+    <Compile Include="Domain\Catalogs\Blog.cs" />
+    <Compile Include="Domain\Catalogs\BlogReview.cs" />
+    <Compile Include="Domain\Catalogs\Category.cs" />
     <Compile Include="Domain\Customers\Customer.cs" />
     <Compile Include="Domain\Customers\CustomerRole.cs" />
     <Compile Include="Domain\Customers\PasswordFormat.cs" />

@@ -1,4 +1,5 @@
 ﻿using Abp.EntityFramework;
+using Blog_Solution.Domain.Catalogs;
 using Blog_Solution.Domain.Customers;
 using System.Data.Entity;
 
@@ -15,6 +16,12 @@ namespace Blog_Solution.EntityFramework
         //Customers
         public virtual IDbSet<CustomerRole> CustomerRole { get; set; }
         public virtual IDbSet<Customer> Customer { get; set; }
+
+        //Catalogs
+        public virtual IDbSet<Category> Category { get; set; }
+        public virtual IDbSet<Blog> Blog { get; set; }
+        public virtual IDbSet<BlogReview> BlogReview { get; set; }
+
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

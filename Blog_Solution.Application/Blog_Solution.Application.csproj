@@ -124,6 +124,13 @@
   <ItemGroup>
     <Compile Include="Blog_SolutionApplicationModule.cs" />
     <Compile Include="Blog_SolutionAppServiceBase.cs" />
+    <Compile Include="Catalog\BlogReviewService.cs" />
+    <Compile Include="Catalog\BlogService.cs" />
+    <Compile Include="Catalog\CategoryExtensions.cs" />
+    <Compile Include="Catalog\CategoryService.cs" />
+    <Compile Include="Catalog\IBlogReviewService.cs" />
+    <Compile Include="Catalog\IBlogService.cs" />
+    <Compile Include="Catalog\ICategoryService.cs" />
     <Compile Include="Customers\AuthenticationManager.cs" />
     <Compile Include="Customers\AuthenticationService.cs" />
     <Compile Include="Customers\CustomerManager.cs" />

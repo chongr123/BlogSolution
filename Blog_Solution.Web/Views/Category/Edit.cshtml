@@ -1,0 +1,33 @@
+﻿@model CategoryModel
+
+@{
+    //page title
+    ViewBag.Title = L("Category.Edit");
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="content-header clearfix">
+        <h1 class="pull-left">
+            @L("Category.Edit")
+            <small><i class="fa fa-arrow-circle-left"></i>@Html.ActionLink(L("BackToList"), "List")</small>
+        </h1>
+        <div class="pull-right">
+            <button type="submit" name="save" class="btn bg-blue">
+                <i class="fa fa-floppy-o"></i>
+                @L("Common.Save")
+            </button>
+            <button type="submit" name="save-continue" class="btn bg-blue">
+                <i class="fa fa-floppy-o"></i>
+                @L("Common.SaveContinue")
+            </button>
+            <span id="category-delete" class="btn bg-red">
+                <i class="fa fa-trash-o"></i>
+                @L("Common.Delete")
+            </span>
+        </div>
+    </div>
+    @Html.Partial("_CreateOrUpdate", Model)
+}
+@Html.DeleteConfirmation("customerrole-delete")

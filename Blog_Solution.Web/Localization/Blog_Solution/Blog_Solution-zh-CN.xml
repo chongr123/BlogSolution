@@ -13,5 +13,11 @@
     <text name="AboutFormat" value="关于 {0}" />
     <text name="About_AspNetBoilerplateDescription" value="ASP.NET Boilerplate是开发新Web应用的起点,，它吸纳和提供了Web开发的一些最佳实践，以及流行的框架工具集! ASP.NET Boilerplat基础框架能支撑一系列流行的框架实践，如 &lt;strong&gt;NLayer architecture&lt;/strong&gt; and &lt;strong&gt;Domain Driven Design&lt;/strong&gt;." />
     <text name="ForMoreInformation" value="更多信息" />
+    
+    <!-- Login  -->
+    <text name="Login" value="登录页面" />
+    <text name="Account.LoginName" value="登录名称" />
+    <text name="Account.Password" value="登录密码" />
+    <text name="Account.RememberMe" value="记住密码" />
   </texts>
 </localizationDictionary>

@@ -1,0 +1,177 @@
+﻿@model CategoryListModel
+@{
+    ViewBag.Title = "List";
+}
+
+@Html.AntiForgeryToken()
+<div class="content-header clearfix">
+    <h1 class="pull-left">
+        @L("Category.List")
+    </h1>
+    <div class="pull-right">
+        <a href="@Url.Action("Create")" class="btn bg-blue">
+            <i class="fa fa-plus-square"></i>
+            @L("Common.AddNew")
+        </a>
+    </div>
+</div>
+
+<div class="content">
+    <div class="form-horizontal">
+        <div class="panel-group">
+            <div class="panel panel-default panel-search">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    @Html.LabelForModel(model => model.Keywords)
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.EditorForModel(model => model.Keywords)
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-7">
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    @Html.LabelForModel(model => model.ParentIds)
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.EditorFor(model => model.ParentIds, new { SelectList = Model.AvailableCategories })
+                                    <script>
+                                        $(document).ready(function() {
+                                            var parentsIdsInput = $('#@Html.FieldIdFor(model => model.ParentIds)').data("kendoMultiSelect");
+                                            parentsIdsInput.setOptions({
+                                                autoClose: false
+                                            });
+
+                                            @if (Model.AvailableCategories.Count == 0)
+                                                {
+                                                    <text>
+                                            parentsIdsInput.setOptions({
+                                                enable: false,
+                                                placeholder: '@L("CategoryParents.NoAvailable")'
+                                            });
+                                            parentsIdsInput._placeholder();
+                                            parentsIdsInput._enable();
+                                            </text>
+                                                }
+                                            });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7 col-md-offset-5">
+                            <button type="button" id="search-categories" class="btn btn-primary btn-search">
+                                <i class="fa fa-search"></i>
+                                @L("Common.Search")
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="category-grid"></div>
+
+                    <script>
+                        $(document).ready(function() {
+                            $("#category-grid").kendoGrid({
+                                dataSource: {
+                                    type: "json",
+                                    transport: {
+                                        read: {
+                                            url: "@Html.Raw(Url.Action("List", "Category"))",
+                                            type: "POST",
+                                            dataType: "json",
+                                            data: additionalData
+                                        }
+                                    },
+                                    schema: {
+                                        data: "Data",
+                                        total: "Total",
+                                        errors: "Errors"
+                                    },
+                                    error: function(e) {
+                                        display_kendoui_grid_error(e);
+                                        this.cancelChanges();
+                                    },
+                                    pageSize: @(defaultGridPageSize),
+                                    serverPaging: true,
+                                    serverFiltering: true,
+                                    serverSorting: true
+                                },
+                                pageable: {
+                                    refresh: true,
+                                    pageSizes: [@(gridPageSizes)],
+                                    refresh: true,
+                                    pageSizes: true,
+                                    buttonCount: 5
+                                },
+                                scrollable: false,
+                                columns: [{
+                                    field: "Id",
+                                    title: "@L("Id")"
+                                },{
+                                    field: "Name",
+                                    title: "@L("Category.Name")"
+                                },  {
+                                    field: "Enabled",
+                                    title: "@L("Category.Enabled")",
+                                    width: 100,
+                                    headerAttributes: { style: "text-align:center" },
+                                    attributes: { style: "text-align:center" },
+                                    template: '# if(Enabled) {# <i class="fa fa-check true-icon"></i> #} else {# <i class="fa fa-close false-icon"></i> #} #'
+                                }, {
+                                    field: "DisplayOrder",
+                                    title: "@L("Common.DisplayOrder")"
+                                }, {
+                                    field: "Id",
+                                    title: "@L("Common.Edit")",
+                                    width: 100,
+                                    template: '<a href="Edit/#=Id#">@L("Common.Edit")</a>'
+                                }]
+                            });
+                        });
+                    </script>
+
+                    <script type="text/javascript">
+
+                        $(document).ready(function() {
+                            //search button
+                            $('#search-categories').click(function() {
+                                var grid = $('#category-grid').data('kendoGrid');
+                                grid.dataSource.page(1); //new search. Set page size to 1
+                                return false;
+                            });
+
+                            $("".concat("#@Html.FieldIdFor(model => model.Keywords)")).keydown(function(event) {
+                                if (event.keyCode === 13) {
+                                    $("#search-categories").click();
+                                    return false;
+                                }
+                            });
+
+                        });
+
+
+                        function additionalData() {
+                            var data = {
+                                ParentIds: $('#@Html.FieldIdFor(model => model.ParentIds)').val(),
+                                Keywords: $('#@Html.FieldIdFor(model => model.Keywords)').val()
+                            };
+                            addAntiForgeryToken(data);
+                            return data;
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

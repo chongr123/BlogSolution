@@ -1,5 +1,6 @@
 ﻿using Abp.Web.Mvc.Controllers;
 using Abp.Web.Mvc.Controllers.Results;
+using System;
 using System.Text;
 using System.Web.Mvc;
 
@@ -29,6 +30,27 @@ namespace Blog_Solution.Web.Controllers
                 CamelCase = camelCase,
                 Indented = indented,
             };
+        }
+
+        protected override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            //子节点抛出
+            if (filterContext.IsChildAction)
+                return;
+
+            var accountControllerName = string.Concat(this.GetType().Namespace, ".", "AccountController");
+
+            string controllerName = filterContext.Controller.ToString();
+            //string actionName = filterContext.ActionDescriptor.ActionName;
+
+            if (!controllerName.Equals(accountControllerName, StringComparison.InvariantCultureIgnoreCase) &&
+                !filterContext.HttpContext.User.Identity.IsAuthenticated)
+            {
+                filterContext.Result = new RedirectResult("/Account/Login");
+                //filterContext.Result = new RedirectResult(string.Concat("/login?returnUrl=", filterContext.RequestContext.HttpContext.Request.Url.ToString()));
+            }
+
+            base.OnActionExecuting(filterContext);
         }
     }
 }

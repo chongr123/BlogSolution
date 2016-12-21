@@ -1,4 +1,5 @@
-﻿@using Abp.Web.Mvc.Extensions
+﻿@model Blog_Solution.Web.Models.Account.LoginModel
+@using Abp.Web.Mvc.Extensions
 @{
     Layout = "~/Views/Shared/_SimpleLayout.cshtml";
 }
@@ -11,18 +12,18 @@
                     <legend>@L("LogIn")</legend>
                     <div class="form-group">
                         <div class="col-lg-12">
-                            <input type="text" class="form-control" name="LoginName" placeholder="@L("LoginName")" required maxlength="50">
+                            <input type="text" class="form-control" name="LoginName" placeholder="@L("Account.LoginName")" required maxlength="50">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-lg-12">
-                            <input type="password" class="form-control" name="Password" placeholder="@L("Password")" required maxlength="50">
+                            <input type="password" class="form-control" name="Password" placeholder="@L("Account.Password")" required maxlength="50">
                             <div class="checkbox">
                                 <label>
                                     <input type="checkbox" id="RememberMe">
                                     <span class="ripple"></span>
-                                    <span class="check"></span> @L("RememberMe")
+                                    <span class="check"></span> @L("Account.RememberMe")
                                 </label>
                             </div>
                         </div>
