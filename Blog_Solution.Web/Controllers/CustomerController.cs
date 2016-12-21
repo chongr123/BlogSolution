@@ -146,7 +146,6 @@ namespace Blog_Solution.Web.Controllers
             _customerService.UpdateCustomer(customer);
 
             return new NullJsonResult();
-
         }
         #endregion
     }

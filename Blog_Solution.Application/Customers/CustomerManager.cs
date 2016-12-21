@@ -4,7 +4,7 @@ using Microsoft.AspNet.Identity;
 
 namespace Blog_Solution.Customers
 {
-    public class CustomerManager : UserManager<Customer, int>, IApplicationService
+    public class CustomerManager : UserManager<Customer, int>
     {
         public CustomerManager(IUserStore<Customer, int> store) : base(store)
         {

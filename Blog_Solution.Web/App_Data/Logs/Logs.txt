@@ -2645,3 +2645,683 @@ DEBUG 2016-12-20 19:14:40,272 [14   ] Abp.Modules.AbpModuleManager             -
 DEBUG 2016-12-20 19:14:40,273 [14   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
 DEBUG 2016-12-20 19:14:40,273 [14   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
 DEBUG 2016-12-20 19:14:40,273 [14   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:01:20,132 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:01:20,143 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:01:20,147 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:20,151 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:01:20,371 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:01:21,081 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:01:21,088 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:01:21,088 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:01:21,098 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:01:21,212 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:01:21,235 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2016-12-21 09:01:21,236 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.IAuthenticationService' with service name 'app/authenticationService'.
+DEBUG 2016-12-21 09:01:21,237 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerRoleService' with service name 'app/customerRoleService'.
+DEBUG 2016-12-21 09:01:21,237 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2016-12-21 09:01:21,280 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes define auto mapping attributes
+DEBUG 2016-12-21 09:01:21,280 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Customers.Dto.Customer
+DEBUG 2016-12-21 09:01:21,283 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerModel
+DEBUG 2016-12-21 09:01:21,283 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerRoleModel
+DEBUG 2016-12-21 09:02:56,258 [8    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:02:56,259 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:02:56,260 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:02:56,260 [8    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:03:05,576 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:03:05,586 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:03:05,589 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,591 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,591 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,591 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,591 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,591 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:05,594 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:03:05,782 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:06,413 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:03:06,416 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:03:06,417 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:03:06,418 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:03:06,517 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+FATAL 2016-12-21 09:03:06,534 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.CustomerStore could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 17
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.CustomerStore could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 17
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+DEBUG 2016-12-21 09:03:16,552 [8    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:03:16,553 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:03:16,553 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:03:16,553 [8    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:03:40,452 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:03:40,466 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:03:40,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,474 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,474 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,474 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:40,477 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:03:40,665 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:03:41,214 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:03:41,218 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:03:41,219 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:03:41,220 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:03:41,320 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+FATAL 2016-12-21 09:03:41,337 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.CustomerManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 18
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.CustomerManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 18
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+DEBUG 2016-12-21 09:03:51,355 [25   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:03:51,356 [25   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:03:51,357 [25   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:03:51,357 [25   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:04:00,901 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:04:00,911 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:04:00,914 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:00,919 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:04:01,106 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:01,663 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:04:01,667 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:04:01,668 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:04:01,669 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:04:01,771 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+FATAL 2016-12-21 09:04:01,787 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.LoginManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 19
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.LoginManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 19
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+DEBUG 2016-12-21 09:04:11,800 [9    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:04:11,801 [9    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:04:11,801 [9    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:04:11,801 [9    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:04:42,877 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:04:42,886 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:04:42,889 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:42,895 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:04:43,126 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:04:43,704 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:04:43,707 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:04:43,708 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:04:43,709 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:04:43,811 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:04:43,833 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2016-12-21 09:04:43,834 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.IAuthenticationService' with service name 'app/authenticationService'.
+DEBUG 2016-12-21 09:04:43,835 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerRoleService' with service name 'app/customerRoleService'.
+DEBUG 2016-12-21 09:04:43,836 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2016-12-21 09:04:43,866 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes define auto mapping attributes
+DEBUG 2016-12-21 09:04:43,867 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Customers.Dto.Customer
+DEBUG 2016-12-21 09:04:43,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerModel
+DEBUG 2016-12-21 09:04:43,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerRoleModel
+DEBUG 2016-12-21 09:33:28,932 [110  ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:33:28,933 [110  ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:33:28,933 [110  ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:33:28,934 [110  ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:33:39,599 [124  ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:33:39,608 [124  ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:33:39,613 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,614 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,614 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,615 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,615 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,615 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,615 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,615 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,615 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,615 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,615 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,615 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:39,617 [124  ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:33:39,823 [124  ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:33:40,421 [124  ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:33:40,425 [124  ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:33:40,426 [124  ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:33:40,427 [124  ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:33:40,536 [124  ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+FATAL 2016-12-21 09:33:40,552 [124  ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.CustomerManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 18
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.CustomerManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 18
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+DEBUG 2016-12-21 09:33:50,566 [120  ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:33:50,567 [120  ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:33:50,567 [120  ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:33:50,567 [120  ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:34:14,560 [124  ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:34:14,570 [124  ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:34:14,574 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,576 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,576 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,576 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,576 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,576 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,577 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,577 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,577 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,577 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,578 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,578 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:14,580 [124  ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:34:14,781 [124  ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:15,431 [124  ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:34:15,436 [124  ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:34:15,436 [124  ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:34:15,437 [124  ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:34:15,548 [124  ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:34:15,570 [124  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2016-12-21 09:34:15,571 [124  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.IAuthenticationService' with service name 'app/authenticationService'.
+DEBUG 2016-12-21 09:34:15,572 [124  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerRoleService' with service name 'app/customerRoleService'.
+DEBUG 2016-12-21 09:34:15,573 [124  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2016-12-21 09:34:15,608 [124  ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes define auto mapping attributes
+DEBUG 2016-12-21 09:34:15,608 [124  ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Customers.Dto.Customer
+DEBUG 2016-12-21 09:34:15,611 [124  ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerModel
+DEBUG 2016-12-21 09:34:15,611 [124  ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerRoleModel
+DEBUG 2016-12-21 09:34:43,083 [114  ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:34:43,084 [114  ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:34:43,085 [114  ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:34:43,085 [114  ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:34:51,286 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:34:51,297 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:34:51,301 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,304 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,304 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,304 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,304 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,304 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,304 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:51,306 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:34:51,508 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:34:52,113 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:34:52,118 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:34:52,119 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:34:52,120 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:34:52,235 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+FATAL 2016-12-21 09:34:52,252 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.LoginManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 21
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.LoginManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 21
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+DEBUG 2016-12-21 09:35:02,268 [115  ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:35:02,268 [115  ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:35:02,269 [115  ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:35:02,269 [115  ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:35:42,351 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:35:42,361 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:35:42,366 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,367 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,367 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,367 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:42,370 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:35:42,578 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:35:43,183 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:35:43,187 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:35:43,188 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:35:43,189 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:35:43,304 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+FATAL 2016-12-21 09:35:43,320 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.AuthenticationManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 16
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.AuthenticationManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 16
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+DEBUG 2016-12-21 09:35:53,333 [120  ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:35:53,334 [120  ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:35:53,335 [120  ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:35:53,335 [120  ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:36:18,326 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:36:18,336 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:36:18,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:18,345 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:36:18,552 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:36:19,160 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:36:19,164 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:36:19,165 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:36:19,166 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:36:19,284 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:36:19,306 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2016-12-21 09:36:19,307 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.IAuthenticationService' with service name 'app/authenticationService'.
+DEBUG 2016-12-21 09:36:19,308 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerRoleService' with service name 'app/customerRoleService'.
+DEBUG 2016-12-21 09:36:19,309 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2016-12-21 09:36:19,344 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes define auto mapping attributes
+DEBUG 2016-12-21 09:36:19,344 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Customers.Dto.Customer
+DEBUG 2016-12-21 09:36:19,348 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerModel
+DEBUG 2016-12-21 09:36:19,348 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerRoleModel
+DEBUG 2016-12-21 09:37:48,503 [120  ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:37:48,504 [120  ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:37:48,504 [120  ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:37:48,504 [120  ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:38:56,819 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:38:56,830 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:38:56,833 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:56,838 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:38:57,050 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:38:57,649 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:38:57,655 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:38:57,656 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:38:57,657 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:38:57,778 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:38:57,800 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2016-12-21 09:38:57,801 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.IAuthenticationService' with service name 'app/authenticationService'.
+DEBUG 2016-12-21 09:38:57,802 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerRoleService' with service name 'app/customerRoleService'.
+DEBUG 2016-12-21 09:38:57,803 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2016-12-21 09:38:57,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes define auto mapping attributes
+DEBUG 2016-12-21 09:38:57,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Customers.Dto.Customer
+DEBUG 2016-12-21 09:38:57,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerModel
+DEBUG 2016-12-21 09:38:57,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerRoleModel
+DEBUG 2016-12-21 09:39:52,211 [109  ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:39:52,212 [109  ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:39:52,212 [109  ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:39:52,212 [109  ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:40:07,098 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:40:07,108 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:40:07,112 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,113 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,113 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,113 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,115 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,117 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:40:07,328 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:40:07,916 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:40:07,920 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:40:07,921 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:40:07,922 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:40:08,042 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+FATAL 2016-12-21 09:40:08,058 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.AuthenticationManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 16
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.AuthenticationManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 16
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+DEBUG 2016-12-21 09:40:18,064 [92   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:40:18,065 [92   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:40:18,065 [92   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:40:18,065 [92   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:41:45,075 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:41:45,085 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:41:45,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,092 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,092 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,092 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,092 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,092 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,094 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:41:45,338 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:41:45,930 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:41:45,934 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:41:45,934 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:41:45,936 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:41:46,039 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+FATAL 2016-12-21 09:41:46,056 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.CustomerStore could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 17
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.CustomerStore could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 17
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+DEBUG 2016-12-21 09:41:56,060 [97   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:41:56,061 [97   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:41:56,061 [97   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:41:56,062 [97   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:43:01,010 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:43:01,021 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:43:01,026 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,028 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,031 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:43:01,238 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:43:01,839 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:43:01,844 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:43:01,844 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:43:01,845 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:43:01,956 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+FATAL 2016-12-21 09:43:01,975 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.LoginManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 19
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+Castle.MicroKernel.ComponentRegistrationException: Component Blog_Solution.Customers.LoginManager could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   在 Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   在 Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   在 Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   在 Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   在 Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   在 Abp.Dependency.IocManager.Register[TType,TImpl](DependencyLifeStyle lifeStyle) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 120
+   在 Blog_Solution.Blog_SolutionApplicationModule.PostInitialize() 位置 D:\Git\BlogSolution\Blog_Solution.Application\Blog_SolutionApplicationModule.cs:行号 19
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module) 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\Modules\AbpModuleManager.cs:行号 47
+   在 Abp.AbpBootstrapper.Initialize() 位置 D:\Halil\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:行号 132
+DEBUG 2016-12-21 09:43:11,987 [104  ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2016-12-21 09:43:11,988 [104  ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:43:11,989 [104  ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:43:11,989 [104  ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2016-12-21 09:44:04,559 [124  ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-12-21 09:44:04,571 [124  ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2016-12-21 09:44:04,576 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Web.Blog_SolutionWebModule, Blog_Solution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,578 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.1.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,578 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,578 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,578 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,578 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionDataModule, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,578 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,578 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionCoreModule, Blog_Solution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,579 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionApplicationModule, Blog_Solution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,579 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Blog_Solution.Blog_SolutionWebApiModule, Blog_Solution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,579 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,579 [124  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:04,581 [124  ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2016-12-21 09:44:04,794 [124  ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Blog_Solution.EntityFramework.Blog_SolutionDbContext, Blog_Solution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-12-21 09:44:05,377 [124  ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-12-21 09:44:05,381 [124  ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-12-21 09:44:05,382 [124  ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-12-21 09:44:05,383 [124  ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog_Solution
+DEBUG 2016-12-21 09:44:05,488 [124  ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-12-21 09:44:05,511 [124  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2016-12-21 09:44:05,512 [124  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.IAuthenticationService' with service name 'app/authenticationService'.
+DEBUG 2016-12-21 09:44:05,513 [124  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerRoleService' with service name 'app/customerRoleService'.
+DEBUG 2016-12-21 09:44:05,514 [124  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Blog_Solution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2016-12-21 09:44:05,544 [124  ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes define auto mapping attributes
+DEBUG 2016-12-21 09:44:05,544 [124  ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Customers.Dto.Customer
+DEBUG 2016-12-21 09:44:05,547 [124  ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerModel
+DEBUG 2016-12-21 09:44:05,547 [124  ] Abp.AutoMapper.AbpAutoMapperModule       - Blog_Solution.Web.Models.Customers.CustomerRoleModel
+WARN  2016-12-21 09:44:07,141 [101  ] Abp.Logging.LogHelper                    - Can not find 'LogIn' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:07,141 [101  ] Abp.Logging.LogHelper                    - Can not find 'LoginName' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:07,141 [101  ] Abp.Logging.LogHelper                    - Can not find 'Password' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:07,142 [101  ] Abp.Logging.LogHelper                    - Can not find 'RememberMe' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:07,142 [101  ] Abp.Logging.LogHelper                    - Can not find 'LogIn' in localization source 'Blog_Solution'!
+ERROR 2016-12-21 09:44:07,173 [101  ] lution.Web.Controllers.AccountController - 未能在以下路径中找到布局页“~/Views/Shared/_SimpleLayout.cshtml”:“~/Views/Shared/_SimpleLayout.cshtml”。
+System.Web.HttpException (0x80004005): 未能在以下路径中找到布局页“~/Views/Shared/_SimpleLayout.cshtml”:“~/Views/Shared/_SimpleLayout.cshtml”。
+   在 System.Web.WebPages.WebPageExecutingBase.NormalizeLayoutPagePath(String layoutPagePath)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-12-21 09:44:11,833 [109  ] Abp.Logging.LogHelper                    - Can not find 'LogIn' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:11,833 [109  ] Abp.Logging.LogHelper                    - Can not find 'LoginName' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:11,833 [109  ] Abp.Logging.LogHelper                    - Can not find 'Password' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:11,833 [109  ] Abp.Logging.LogHelper                    - Can not find 'RememberMe' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:11,833 [109  ] Abp.Logging.LogHelper                    - Can not find 'LogIn' in localization source 'Blog_Solution'!
+ERROR 2016-12-21 09:44:11,833 [109  ] lution.Web.Controllers.AccountController - 未能在以下路径中找到布局页“~/Views/Shared/_SimpleLayout.cshtml”:“~/Views/Shared/_SimpleLayout.cshtml”。
+System.Web.HttpException (0x80004005): 未能在以下路径中找到布局页“~/Views/Shared/_SimpleLayout.cshtml”:“~/Views/Shared/_SimpleLayout.cshtml”。
+   在 System.Web.WebPages.WebPageExecutingBase.NormalizeLayoutPagePath(String layoutPagePath)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-12-21 09:44:26,476 [116  ] Abp.Logging.LogHelper                    - Can not find 'LogIn' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:26,476 [116  ] Abp.Logging.LogHelper                    - Can not find 'LoginName' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:26,477 [116  ] Abp.Logging.LogHelper                    - Can not find 'Password' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:26,477 [116  ] Abp.Logging.LogHelper                    - Can not find 'RememberMe' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:26,477 [116  ] Abp.Logging.LogHelper                    - Can not find 'LogIn' in localization source 'Blog_Solution'!
+WARN  2016-12-21 09:44:29,810 [122  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2016-12-21 09:44:29,833 [122  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.

@@ -9,7 +9,7 @@ namespace Blog_Solution.Customers
     /// <summary>
     /// 用户仓储
     /// </summary>
-    public class CustomerStore : IUserStore<Customer,int>, IApplicationService
+    public class CustomerStore : IUserStore<Customer,int>
     {
         #region Fields && Ctor
         private readonly ICustomerService _customerService;

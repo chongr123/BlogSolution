@@ -1,7 +1,9 @@
 ﻿using Abp.AutoMapper;
 using Blog_Solution.Customers;
 using Blog_Solution.Domain.Customers;
+using Blog_Solution.Web.Framework.Controllers;
 using Blog_Solution.Web.Framework.Kendoui;
+using Blog_Solution.Web.Framework.Mvc;
 using Blog_Solution.Web.Models.Customers;
 using System;
 using System.Collections.Generic;
@@ -15,13 +17,15 @@ namespace Blog_Solution.Web.Controllers
     {
         #region Fields && Ctor
         private readonly ICustomerRoleService _roleService;
+        private readonly ICustomerService _customerService;
         /// <summary>
         /// 构造，因为有注入所以不用担心
         /// </summary>
         /// <param name="roleService"></param>
-        public CustomerRoleController(ICustomerRoleService roleService)
+        public CustomerRoleController(ICustomerRoleService roleService, ICustomerService customerService)
         {
             this._roleService = roleService;
+            this._customerService = customerService;
         }
         #endregion
 
@@ -54,10 +58,7 @@ namespace Blog_Solution.Web.Controllers
             }
         }
         #endregion
-        /// <summary>
-        /// 列表页面
-        /// </summary>
-        /// <returns></returns>
+        
         #region Method
         public ActionResult List()
         {
@@ -102,8 +103,8 @@ namespace Blog_Solution.Web.Controllers
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        [HttpPost]
-        public ActionResult Create(CustomerRoleModel model)
+        [HttpPost, ParameterBasedOnFormName("save-continue", "continueEditing")]
+        public ActionResult Create(CustomerRoleModel model, bool continueEditing)
         {
             if (ModelState.IsValid)
             {
@@ -112,6 +113,10 @@ namespace Blog_Solution.Web.Controllers
                 //去看看就知道了
                 var entity = model.MapTo<CustomerRole>();
                 _roleService.InsertCustomerRole(entity);
+                if (continueEditing)
+                {
+                    return RedirectToAction("Edit", new { id = entity.Id });
+                }
                 return RedirectToAction("List");
             }
 
@@ -129,6 +134,47 @@ namespace Blog_Solution.Web.Controllers
             PrepareCustomerRoleModel(model);
             return View(model);
 
+        }
+
+
+        [HttpPost, ParameterBasedOnFormName("save-continue", "continueEditing")]
+        public ActionResult Edit(CustomerRoleModel model, bool continueEditing)
+        {
+            if (ModelState.IsValid)
+            {
+                var customerRole = model.MapTo<CustomerRole>();
+                _roleService.UpdateCustomerRole(customerRole);
+
+                if (continueEditing)
+                {
+                    return RedirectToAction("Edit", new { id = customerRole.Id });
+                }
+                return RedirectToAction("List");
+            }
+
+            PrepareCustomerRoleModel(model);
+            return View(model);
+        }
+
+
+        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            var role = _roleService.GetCustomerRoleById(id);
+            if (role == null)
+                throw new ArgumentException("用户不存在");
+
+            var customers = _customerService.GetAllCustomers(customerRoleIds: new int[] { role.Id });
+            if (customers.TotalCount > 0)
+            {
+                var data = new DataSourceResult
+                {
+                    Errors = "该角色被占用",
+                };
+                return AbpJson(data);
+            }
+            _roleService.DeleteCustomerRole(role.Id);
+            return new NullJsonResult();
         }
         #endregion
 

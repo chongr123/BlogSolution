@@ -124,15 +124,23 @@
   <ItemGroup>
     <Compile Include="Blog_SolutionApplicationModule.cs" />
     <Compile Include="Blog_SolutionAppServiceBase.cs" />
+    <Compile Include="Customers\AuthenticationManager.cs" />
+    <Compile Include="Customers\AuthenticationService.cs" />
     <Compile Include="Customers\CustomerManager.cs" />
     <Compile Include="Customers\CustomerRoleService.cs" />
     <Compile Include="Customers\CustomerService.cs" />
     <Compile Include="Customers\CustomerStore.cs" />
     <Compile Include="Customers\Dto\Customer.cs" />
+    <Compile Include="Customers\Dto\CustomerLoginResults.cs" />
+    <Compile Include="Customers\Dto\LoginResults.cs" />
+    <Compile Include="Customers\IAuthenticationService.cs" />
     <Compile Include="Customers\ICustomerRoleService.cs" />
     <Compile Include="Customers\ICustomerService.cs" />
+    <Compile Include="Customers\LoginManager.cs" />
     <Compile Include="PagedResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\EncryptionService.cs" />
+    <Compile Include="Security\IEncryptionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
